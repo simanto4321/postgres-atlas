@@ -17,6 +17,8 @@ Introspects a live database (or serves a demo snapshot), scores its health, fore
 
 ![Postgres Atlas dashboard](docs/assets/dashboard.png)
 
+![Postgres Atlas architecture](docs/assets/architecture.png)
+
 ---
 
 ## Why this exists
