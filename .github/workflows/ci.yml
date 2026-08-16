@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  backend:
+    name: Go backend
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
+      - name: Download modules
+        run: go mod tidy
+      - name: Vet
+        run: go vet ./...
+      - name: Test
+        run: go test -race ./...
+      - name: Build
+        run: go build -o atlas ./cmd/atlas
+      - name: Snapshot smoke
+        run: |
+          ./atlas --snapshot ../docs/sample-report.json --addr :18000 &
+          sleep 1
+          curl -sf http://127.0.0.1:18000/api/health
+          curl -sf http://127.0.0.1:18000/api/report | grep -q '"database":"commerce"'
+
+  frontend:
+    name: React dashboard
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install dependencies
+        run: npm install
+      - name: Type-check and build
+        run: npm run build

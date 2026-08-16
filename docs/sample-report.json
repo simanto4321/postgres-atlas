@@ -1,0 +1,407 @@
+{
+  "generated_at": "2026-08-16T07:34:07.570659+00:00",
+  "database": "commerce",
+  "version": "PostgreSQL 16.4 on x86_64-pc-linux-gnu",
+  "capacity": {
+    "total_bytes": 78630617088,
+    "total_human": "73.2 GB",
+    "forecast": {
+      "daily_growth_bytes": 1153993462,
+      "daily_growth_human": "1.1 GB",
+      "threshold_bytes": 107374182400,
+      "days_to_threshold": 24.9,
+      "projected_full": "2026-09-09"
+    },
+    "top_tables": [
+      {
+        "schema": "public",
+        "name": "orders",
+        "total_bytes": 19327352832,
+        "heap_bytes": 15032385536,
+        "index_bytes": 3221225472,
+        "toast_bytes": 1073741824,
+        "rows": 48200000,
+        "total_human": "18.0 GB"
+      },
+      {
+        "schema": "public",
+        "name": "order_items",
+        "total_bytes": 12884901888,
+        "heap_bytes": 10737418240,
+        "index_bytes": 2147483648,
+        "toast_bytes": 0,
+        "rows": 162000000,
+        "total_human": "12.0 GB"
+      },
+      {
+        "schema": "public",
+        "name": "events",
+        "total_bytes": 9663676416,
+        "heap_bytes": 8589934592,
+        "index_bytes": 943718400,
+        "toast_bytes": 104857600,
+        "rows": 410000000,
+        "total_human": "9.0 GB"
+      },
+      {
+        "schema": "public",
+        "name": "customers",
+        "total_bytes": 2147483648,
+        "heap_bytes": 1468006400,
+        "index_bytes": 524288000,
+        "toast_bytes": 104857600,
+        "rows": 4800000,
+        "total_human": "2.0 GB"
+      },
+      {
+        "schema": "public",
+        "name": "products",
+        "total_bytes": 440401920,
+        "heap_bytes": 293601280,
+        "index_bytes": 125829120,
+        "toast_bytes": 20971520,
+        "rows": 180000,
+        "total_human": "420.0 MB"
+      },
+      {
+        "schema": "analytics",
+        "name": "daily_revenue",
+        "total_bytes": 188743680,
+        "heap_bytes": 157286400,
+        "index_bytes": 31457280,
+        "toast_bytes": 0,
+        "rows": 2200000,
+        "total_human": "180.0 MB"
+      }
+    ],
+    "history": [
+      {
+        "day": "2026-07-18",
+        "bytes": 45097156608
+      },
+      {
+        "day": "2026-07-19",
+        "bytes": 46271561728
+      },
+      {
+        "day": "2026-07-20",
+        "bytes": 47445966848
+      },
+      {
+        "day": "2026-07-21",
+        "bytes": 48620371968
+      },
+      {
+        "day": "2026-07-22",
+        "bytes": 49794777088
+      },
+      {
+        "day": "2026-07-23",
+        "bytes": 50864324608
+      },
+      {
+        "day": "2026-07-24",
+        "bytes": 52038729728
+      },
+      {
+        "day": "2026-07-25",
+        "bytes": 53213134848
+      },
+      {
+        "day": "2026-07-26",
+        "bytes": 54387539968
+      },
+      {
+        "day": "2026-07-27",
+        "bytes": 55561945088
+      },
+      {
+        "day": "2026-07-28",
+        "bytes": 56631492608
+      },
+      {
+        "day": "2026-07-29",
+        "bytes": 57805897728
+      },
+      {
+        "day": "2026-07-30",
+        "bytes": 58980302848
+      },
+      {
+        "day": "2026-07-31",
+        "bytes": 60154707968
+      },
+      {
+        "day": "2026-08-01",
+        "bytes": 61329113088
+      },
+      {
+        "day": "2026-08-02",
+        "bytes": 62398660608
+      },
+      {
+        "day": "2026-08-03",
+        "bytes": 63573065728
+      },
+      {
+        "day": "2026-08-04",
+        "bytes": 64747470848
+      },
+      {
+        "day": "2026-08-05",
+        "bytes": 65921875968
+      },
+      {
+        "day": "2026-08-06",
+        "bytes": 67096281088
+      },
+      {
+        "day": "2026-08-07",
+        "bytes": 68165828608
+      },
+      {
+        "day": "2026-08-08",
+        "bytes": 69340233728
+      },
+      {
+        "day": "2026-08-09",
+        "bytes": 70514638848
+      },
+      {
+        "day": "2026-08-10",
+        "bytes": 71689043968
+      },
+      {
+        "day": "2026-08-11",
+        "bytes": 72863449088
+      },
+      {
+        "day": "2026-08-12",
+        "bytes": 73932996608
+      },
+      {
+        "day": "2026-08-13",
+        "bytes": 75107401728
+      },
+      {
+        "day": "2026-08-14",
+        "bytes": 76281806848
+      },
+      {
+        "day": "2026-08-15",
+        "bytes": 77456211968
+      },
+      {
+        "day": "2026-08-16",
+        "bytes": 78630617088
+      }
+    ]
+  },
+  "health": {
+    "cache_hit_ratio": 0.972,
+    "connections_used": 62,
+    "connections_max": 100,
+    "wraparound_age": 1180000000,
+    "wraparound_pct": 0.5497363101970094,
+    "longest_query_sec": 42.0,
+    "uptime_days": 47.3,
+    "score": 72,
+    "grade": "C",
+    "checks": [
+      {
+        "name": "Cache hit ratio",
+        "status": "warn",
+        "detail": "97.2%"
+      },
+      {
+        "name": "Connections",
+        "status": "ok",
+        "detail": "62 / 100"
+      },
+      {
+        "name": "XID wraparound",
+        "status": "warn",
+        "detail": "55.0%"
+      },
+      {
+        "name": "Dead tuples",
+        "status": "warn",
+        "detail": "11.7%"
+      },
+      {
+        "name": "Long-running query",
+        "status": "ok",
+        "detail": "42s"
+      }
+    ]
+  },
+  "bloat": [
+    {
+      "schema": "public",
+      "name": "orders",
+      "bloat_bytes": 3221225472,
+      "bloat_ratio": 0.42,
+      "bloat_human": "3.0 GB"
+    },
+    {
+      "schema": "public",
+      "name": "events",
+      "bloat_bytes": 1887436800,
+      "bloat_ratio": 0.36,
+      "bloat_human": "1.8 GB"
+    }
+  ],
+  "indexes": {
+    "unused": [
+      {
+        "schema": "public",
+        "table": "orders",
+        "index": "idx_orders_legacy_status",
+        "size_bytes": 859832320,
+        "scans": 0,
+        "size_human": "820.0 MB"
+      },
+      {
+        "schema": "public",
+        "table": "customers",
+        "index": "idx_customers_old_email",
+        "size_bytes": 220200960,
+        "scans": 0,
+        "size_human": "210.0 MB"
+      },
+      {
+        "schema": "public",
+        "table": "products",
+        "index": "idx_products_sku_lower",
+        "size_bytes": 18874368,
+        "scans": 0,
+        "size_human": "18.0 MB"
+      }
+    ],
+    "duplicate": [
+      {
+        "schema": "public",
+        "table": "customers",
+        "indexes": [
+          "customers_email_key",
+          "idx_customers_email"
+        ],
+        "columns": "email"
+      }
+    ],
+    "missing": [
+      {
+        "schema": "public",
+        "table": "order_items",
+        "seq_scan": 18420,
+        "seq_tup_read": 2900000000,
+        "live_rows": 162000000,
+        "avg_rows_read": 157400.0,
+        "reason": "18420 sequential scans read 2900000000 rows (~157400 rows/scan) on a 162000000-row table; an index on the filtered/joined columns would avoid full scans."
+      }
+    ]
+  },
+  "vacuum": [
+    {
+      "schema": "public",
+      "name": "orders",
+      "dead_tuples": 6400000,
+      "live_tuples": 48200000,
+      "last_autovacuum": "2026-08-14 03:12",
+      "last_autoanalyze": "2026-08-14 03:40",
+      "dead_ratio": 0.11721611721611722
+    },
+    {
+      "schema": "public",
+      "name": "events",
+      "dead_tuples": 38000000,
+      "live_tuples": 410000000,
+      "last_autovacuum": "2026-08-13 21:05",
+      "last_autoanalyze": "2026-08-13 21:40",
+      "dead_ratio": 0.08482142857142858
+    },
+    {
+      "schema": "public",
+      "name": "customers",
+      "dead_tuples": 90000,
+      "live_tuples": 4800000,
+      "last_autovacuum": "2026-08-15 01:10",
+      "last_autoanalyze": "2026-08-15 01:12",
+      "dead_ratio": 0.018404907975460124
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "capacity-forecast",
+      "severity": "warning",
+      "category": "Capacity",
+      "title": "Storage projected to hit threshold in 25 days",
+      "rationale": "Growing ~1.1 GB/day; at this rate the 100.0 GB threshold is reached on 2026-09-09.",
+      "action_sql": "-- Plan storage/partitioning; archive cold data or expand the volume."
+    },
+    {
+      "id": "wraparound",
+      "severity": "warning",
+      "category": "Reliability",
+      "title": "Transaction-ID wraparound risk is elevated",
+      "rationale": "Oldest unfrozen XID is 55.0% of the wraparound budget. Autovacuum may not be keeping up.",
+      "action_sql": "VACUUM (FREEZE, VERBOSE);  -- and review autovacuum_freeze_max_age"
+    },
+    {
+      "id": "unused-index-idx_orders_legacy_status",
+      "severity": "warning",
+      "category": "Indexes",
+      "title": "Unused index \"idx_orders_legacy_status\" (820.0 MB)",
+      "rationale": "0 scans since stats reset on public.orders. It still costs write amplification and disk.",
+      "action_sql": "DROP INDEX CONCURRENTLY public.idx_orders_legacy_status;"
+    },
+    {
+      "id": "unused-index-idx_customers_old_email",
+      "severity": "warning",
+      "category": "Indexes",
+      "title": "Unused index \"idx_customers_old_email\" (210.0 MB)",
+      "rationale": "0 scans since stats reset on public.customers. It still costs write amplification and disk.",
+      "action_sql": "DROP INDEX CONCURRENTLY public.idx_customers_old_email;"
+    },
+    {
+      "id": "unused-index-idx_products_sku_lower",
+      "severity": "warning",
+      "category": "Indexes",
+      "title": "Unused index \"idx_products_sku_lower\" (18.0 MB)",
+      "rationale": "0 scans since stats reset on public.products. It still costs write amplification and disk.",
+      "action_sql": "DROP INDEX CONCURRENTLY public.idx_products_sku_lower;"
+    },
+    {
+      "id": "missing-index-order_items",
+      "severity": "warning",
+      "category": "Indexes",
+      "title": "Table \"order_items\" is heavily sequentially scanned",
+      "rationale": "18420 sequential scans read 2900000000 rows (~157400 rows/scan) on a 162000000-row table; an index on the filtered/joined columns would avoid full scans.",
+      "action_sql": "-- Review predicates on public.order_items and add a targeted index (e.g. on filter/join columns)."
+    },
+    {
+      "id": "duplicate-index-customers",
+      "severity": "info",
+      "category": "Indexes",
+      "title": "Duplicate indexes on \"customers\" (email)",
+      "rationale": "Indexes ['customers_email_key', 'idx_customers_email'] cover the same columns; keep one.",
+      "action_sql": "DROP INDEX CONCURRENTLY public.idx_customers_email;"
+    },
+    {
+      "id": "bloat-orders",
+      "severity": "info",
+      "category": "Bloat",
+      "title": "Table \"orders\" is ~42% bloat (3.0 GB reclaimable)",
+      "rationale": "Dead space inflates scans and backups. A rewrite reclaims it (locks briefly; prefer pg_repack online).",
+      "action_sql": "VACUUM (FULL, ANALYZE) public.orders;  -- or: pg_repack -t orders"
+    },
+    {
+      "id": "bloat-events",
+      "severity": "info",
+      "category": "Bloat",
+      "title": "Table \"events\" is ~36% bloat (1.8 GB reclaimable)",
+      "rationale": "Dead space inflates scans and backups. A rewrite reclaims it (locks briefly; prefer pg_repack online).",
+      "action_sql": "VACUUM (FULL, ANALYZE) public.events;  -- or: pg_repack -t events"
+    }
+  ]
+}
